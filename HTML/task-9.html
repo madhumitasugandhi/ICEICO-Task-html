@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task-9</title>
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            gap: 11px;
+            padding: 10px 0px;
+            grid-template-columns: repeat(16, 1fr);
+            grid-template-rows: repeat(9, 1fr);
+        }
+       .container > div{
+        background-color: rgb(78, 19, 240);
+        font-size: 22px;
+        color: white;
+        border: none;
+        padding: 20px;
+        text-align: center;
+       }
+       .a{
+        grid-row: 1/span9;
+        grid-column:1/span 2;
+       }
+       .b{
+        grid-row: 1 /span 5;
+        grid-column:3/span 7;
+       }
+       .c{
+        grid-row: 1;
+        grid-column:10/span 5;
+       }
+       .d{
+        grid-row:2/ span 4 ;
+        grid-column:10 /span 5 ;
+       }
+       .e{
+        grid-row: 1/span9;
+        grid-column:15/span 2;
+       }
+       .f{
+        grid-row: 6/ span 2;
+        grid-column:3/ span 12 ;
+       }
+       .g{
+        grid-row:8/ span 3 ;
+        grid-column: 3/ span 12;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a">
+            Margin
+        </div>
+        <div class="b">
+            Gallery
+        </div>
+        <div class="c">
+            Title
+        </div>
+        <div class="d">
+            Buy Box
+        </div>
+        <div class="e">
+            Margin
+        </div>
+        <div class="f">
+            Description
+        </div>
+        <div class="g">
+            Related
+        </div>
+    </div>
+</body>
+</html>
