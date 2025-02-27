@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color: #b300b3;
+            background-image: linear-gradient(to  right, #cc0669, #9900cc);
+        }
+        .container{
+            width: 40%;
+            margin: 120px 60px;
+        }
+        .task-input-container{
+            margin: 30px;
+            height: 40px;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.911);
+
+        }
+        .task-input{
+            padding: 7px 15px;
+            border: 1px solid rgb(219, 216, 216);
+            border-radius: 3px;
+            width: 380px;
+        }
+        .addTask-btn{
+            padding: 7px 30px;
+            background-color: #9900cc;
+            border: none;
+            border-radius: 3px;
+            margin-left: 17px;
+            color: white;
+            float: right;
+        }
+        .tasks-container{
+            margin: 30px;
+            height: 200px;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.911);
+        }
+        .title{
+            position: relative;
+            left: 60%;
+            top: -280px;
+            font-size: 60px;
+            font-weight: bolder;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        .para{
+            position: relative;
+            left: 60%;
+            top: -270px;
+            font-size: 25px;
+            font-weight: bold;
+            color: black;
+            border: 1px solid gray;
+            background-color: aliceblue;
+            border-radius: 5px;
+            height:30px ;
+            padding: 10px;
+            width: 280px;
+
+        }
+        .del{
+            float: right;
+            background-color: #9900cc;
+            height: 25px;
+            border-radius: 2px;
+            border: none;
+            color: white;
+        }
+        .del:hover{
+            transform: scale(1.3);
+            transition: transform 0.3s;
+            background-color: #b300b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="task-input-container">
+            <input type="text" id="task-input" class="task-input" placeholder="Task to be done....">
+            <button type="button" class="addTask-btn" onclick="addTask()"> Add </button>
+        </div>
+
+        <div class="tasks-container">
+            <p>prepare the monthly report<button class="del"><i class="fa fa-trash"></i></button></p><hr>
+            <p>Lunch with Pooja & Shikha<button class="del"><i class="fa fa-trash"></i></button></p><hr>
+            <p><del>Buy gift cards</del><button class="del"><i class="fa fa-trash"></i></button></p><hr>
+            <p>Get groceried <button class="del"><i class="fa fa-trash"></i></button></p>
+        </div>
+    </div>
+    <h1 class="title"><b>TO DO LIST</b></h1>
+    <p class="para">HTML, CSS & Javascript</p>
+</body>
+
+</html>
